@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Hanin Undac, a frontend developer and designer." />
+  <title>Portfolio | Hanin Undac</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo">H<span>.</span>U</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- ============ HERO (burgundy cover slide) ============ -->
+    <section class="slide slide--burgundy hero" id="home">
+      <h1 class="hero__title fade-in">Portfolio</h1>
+
+      <div class="hero__stage">
+        <p class="hero__name hero__name--first">Hanin</p>
+
+        <div class="hero__photo fade-in">
+          <!-- Replace with your own photo (a cut-out PNG looks best), e.g. images/me.png -->
+          <img src="https://placehold.co/420x640/C98F8A/6F1D25?text=Your+Photo" alt="Portrait of Hanin Undac" />
+        </div>
+
+        <p class="hero__name hero__name--last">Undac</p>
+      </div>
+
+      <div class="hero__footer">
+        <ul class="hero__handles">
+          <li>fb: hanin undac</li>
+          <li>ig: unhunieyall</li>
+        </ul>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--accent"></a>
+          <a href="#contact" class="btn btn--ghost"></a>
+        </div>
+      </div>
+      <!-- Walking heels along the bottom edge of the hero (decorative) -->
+      <div class="runway" aria-hidden="true">
+        <div class="runner"><span class="heel"></span><span class="heel"></span></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+
+      <!-- About Me slide -->
+      <article class="slide slide--white about__me fade-in">
+        <div class="about__text">
+          <h2 class="display">About<br />Me</h2>
+          <p>Hi, I'm Hanin, Im jolly person who loves to laugh, even at the smallest things. im also a bit of a crybaby because i can be emotional sometimes i enjoy being around people who are friendly, kind and respectful to everyone..</p>
+          <p></p></p>
+          <blockquote class="philosophy">
+            “soft hearted, loud laughter, geniune soul.”
+            <cite>My design philosophy</cite>
+          </blockquote>
+        </div>
+        <div class="about__photo">
+          <img src="https://placehold.co/520x640/E8C9C4/6F1D25?text=About+Photo" alt="Hanin working at a desk" loading="lazy" />
+        </div>
+      </article>
+
+      <!-- I Create slide -->
+      <article class="slide slide--gradient create fade-in">
+        <h2 class="display display--center">about me</h2>
+
+        <div class="create__grid">
+          <div class="create__col">
+            <h3 class="pill pill--title">hobbies</h3>
+            <ul class="pill-list">
+              <li>singing</li>
+              <li>dancing</li>
+              <li>cooking</li>
+              <li>baking</li>
+              <li>biking</li>
+              <li>...</li>
+            </ul>
+          </div>
+
+          <div class="create__photo">
+            <img src="https://placehold.co/360x520/F1D8D3/6F1D25?text=Photo" alt="Hanin smiling" loading="lazy" />
+          </div>
+
+          <div class="create__col">
+            <h3 class="pill pill--title">strenght</h3>
+            <ul class="pill-list">
+              <li>empathy</li>
+              <li>discipline</li>
+              <li>initiative</li>
+              <li>critical thinking</li>
+              <li>cross-cultural competence</li>
+              <li>...</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- Highlights slide (skills) -->
+      <article class="slide slide--paper highlights fade-in">
+        <h2 class="display display--line"><span>Skills</span></h2>
+        <ul class="highlights__grid">
+          <li class="bubble"><span class="bubble__icon">&lt;/&gt;</span>HTML5</li>
+          <li class="bubble bubble--solid"><span class="bubble__icon">#</span>CSS3</li>
+          <li class="bubble"><span class="bubble__icon">JS</span>JavaScript</li>
+          <li class="bubble bubble--solid"><span class="bubble__icon">⎇</span>Git</li>
+          <li class="bubble bubble--solid"><span class="bubble__icon">▣</span>VS Code</li>
+          <li class="bubble"><span class="bubble__icon">◐</span>Responsive</li>
+          <li class="bubble bubble--solid"><span class="bubble__icon">✎</span>Figma</li>
+          <li class="bubble"><span class="bubble__icon">♿</span>A11y</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects" id="projects">
+
+      <!-- The Case -->
+      <article class="slide slide--paper case fade-in">
+        <h2 class="display display--center">The Case</h2>
+        <p class="subtitle"><span>Featured projects</span></p>
+
+        <div class="case__grid">
+          <article class="case-card">
+            <div class="case-card__img">
+              <img src="https://placehold.co/640x520/8A2A33/F7EEEA?text=Project+One" alt="Thumbnail of Bloom Florist" loading="lazy" />
+            </div>
+            <div class="case-card__body">
+              <h3>Bloom Florist</h3>
+              <p>A responsive landing page for a local flower shop with a clean product gallery.</p>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+              <a href="#" class="link-arrow">View Project <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-card__img">
+              <img src="https://placehold.co/640x520/D9A19A/6F1D25?text=Project+Two" alt="Thumbnail of TaskFlow" loading="lazy" />
+            </div>
+            <div class="case-card__body">
+              <h3>TaskFlow</h3>
+              <p>A minimal productivity app with local storage, filters, and drag-and-drop.</p>
+              <ul class="tags"><li>JavaScript</li><li>LocalStorage</li></ul>
+              <a href="#" class="link-arrow">View Project <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-card__img">
+              <img src="https://placehold.co/640x520/B8837D/F7EEEA?text=Project+Three" alt="Thumbnail of Weather Window" loading="lazy" />
+            </div>
+            <div class="case-card__body">
+              <h3>Weather Window</h3>
+              <p>A forecast dashboard that consumes a public API and presents data beautifully.</p>
+              <ul class="tags"><li>API</li><li>Grid</li><li>ES6</li></ul>
+              <a href="#" class="link-arrow">View Project <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="case-card">
+            <div class="case-card__img">
+              <img src="https://placehold.co/640x520/EBD3CE/6F1D25?text=Project+Four" alt="Thumbnail of Studio Interiors" loading="lazy" />
+            </div>
+            <div class="case-card__body">
+              <h3>Studio Interiors</h3>
+              <p>A portfolio concept for an interior studio, focused on typography and whitespace.</p>
+              <ul class="tags"><li>UI/UX</li><li>Flexbox</li><li>Animation</li></ul>
+              <a href="#" class="link-arrow">View Project <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </article>
+
+      <!-- Stories (phone-style previews) -->
+      <article class="slide slide--burgundy stories fade-in">
+        <h2 class="display display--line display--light"><span>Stories</span></h2>
+        <div class="stories__grid">
+          <a href="#" class="story">
+            <img src="https://placehold.co/300x540/C98F8A/6F1D25?text=Screen+1" alt="Mobile screen preview 1" loading="lazy" />
+            <span class="story__label">Mobile app UI</span>
+          </a>
+          <a href="#" class="story">
+            <img src="https://placehold.co/300x540/8A8A8A/ffffff?text=Screen+2" alt="Mobile screen preview 2" loading="lazy" />
+            <span class="story__label">Dashboard</span>
+          </a>
+          <a href="#" class="story">
+            <img src="https://placehold.co/300x540/F7EEEA/6F1D25?text=Screen+3" alt="Mobile screen preview 3" loading="lazy" />
+            <span class="story__label">Landing page</span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="slide slide--white education fade-in" id="education">
+      <h2 class="display display--center">Education</h2>
+
+      <div class="education__grid">
+        <article class="cert">
+          <p class="cert__year">2023</p>
+          <h3>Frontend Web Development</h3>
+          <p>Online course covering HTML, CSS, JavaScript and responsive design fundamentals.</p>
+          <span class="cert__badge">Certificate</span>
+        </article>
+
+        <article class="cert">
+          <p class="cert__year">2024</p>
+          <h3>UI / UX Design Essentials</h3>
+          <p>Studied layout, typography, color theory and usability in Figma.</p>
+          <span class="cert__badge">Certificate</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="slide slide--burgundy contact" id="contact">
+      <div class="contact__info fade-in">
+        <h2 class="display display--light">Let's<br />Talk</h2>
+        <p>Have a project in mind or just want to say hi? Send a message and I'll reply within a couple of days.</p>
+
+        <ul class="socials" aria-label="Social media links">
+          <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a href="https://instagram.com/unhunieyall" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+      </div>
+
+      <form class="form fade-in" id="contactForm" novalidate>
+        <div class="form__group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required />
+          <small class="form__error" aria-live="polite"></small>
+        </div>
+
+        <div class="form__group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          <small class="form__error" aria-live="polite"></small>
+        </div>
+
+        <div class="form__group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          <small class="form__error" aria-live="polite"></small>
+        </div>
+
+        <button type="submit" class="btn btn--accent btn--block">Send Message</button>
+        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year">2026</span> Hanin Undac. All rights reserved.</p>
+      <ul class="footer__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
